@@ -1,0 +1,31 @@
+//Header files 
+#include <stdio.h> 
+#include <math.h>
+void main() 
+{ 
+    //Variable Declaration
+    float radius, side, areac, arear, areas, perir, peris, peric; 
+  
+  int lengthr, breadthr; 
+  //Statement asking for the dimensions of the rectangle
+printf("enter the length and breadth of the rectangle of which you want to calculate the area and the perimeter of");
+//Input Statement telling the area and the perimeter of the circle 
+scanf("%d%d", &lengthr, &breadthr);
+perir=2*(lengthr+breadthr); 
+arear=lengthr*breadthr;
+printf("the area of the rectangle is %.2f and the perimeter is %.2f\n\n", arear, perir);
+//The same process is now followed for calculating the area as well as the perimeter of the square of the side decided by user input
+/*The operations take place line-wise, that is- the area and perimeter of rectangle after being calculated after the user inputs the length and the breadth will show first and then the program will ask for the side input to calculate the same parameters for the square and subsequently, the circle*/
+printf("Now, enter the side of the square which you want to calculate the area and the perimeter of");
+scanf("%f", &side);
+areas=side*side;
+peris=4*side; 
+printf("the area of the square is %.2f and the perimeter is %.2f\n\n", areas, peris);
+
+printf("Enter the radius of the circle for which you want the area & the perimeter of"); 
+scanf("%f", &radius);
+areac=radius*radius*3.14;
+peric=2*3.14*radius; 
+printf("the area of the circle is %.2f and the perimeter is %.2f", areac, peric);
+
+}

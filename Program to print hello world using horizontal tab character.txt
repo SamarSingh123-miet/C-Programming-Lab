@@ -1,0 +1,6 @@
+//Program to print hello world using horizontal tab character
+#include <stdio.h> 
+void main()
+{
+    printf("hello world\t\t hello world");
+}

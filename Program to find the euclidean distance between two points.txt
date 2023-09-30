@@ -1,0 +1,15 @@
+//program to find the euclidean distance between two points
+#include <stdio.h> 
+#include <math.h>
+void main()
+{ 
+   int dy, dx, x1, x2, y1, y2, eudc;
+   printf("Enter x1, y1, x2, y2 respectively after this following message"); 
+   scanf("%d%d%d%d", &x1, &y1, &x2, &y2);
+   dx=(x2-x1);
+   dy=(y2-y1);
+   eudc=sqrt((pow(dy, 2))+(pow(dx,2)));
+   printf("The distance between the two points is %d", eudc);
+
+
+}

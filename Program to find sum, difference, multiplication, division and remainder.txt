@@ -1,0 +1,15 @@
+#include <stdio.h>  
+#include <math.h> 
+void main()
+{ 
+int a, b, division, multiplication, addition, subtraction;
+int remainder; 
+printf("Enter the two numbers here"); 
+scanf("%d%d", &a, &b); 
+addition=a+b;
+subtraction=a-b;
+division=a/b;
+multiplication=a*b; 
+remainder=a%b;
+printf("The result of sum is: %d\n\nResult of the subtraction is:%d\n\nResult of the division is %d\n\nResult of the multiplication is %d\n\nTH remainder after their division is %d", addition, subtraction, division, multiplication, remainder);
+} 

@@ -1,0 +1,6 @@
+//program to write hello world using new line character 
+#include <stdio.h> 
+void main()
+{ 
+    printf("HelloWorld\nHelloWorld");
+}
