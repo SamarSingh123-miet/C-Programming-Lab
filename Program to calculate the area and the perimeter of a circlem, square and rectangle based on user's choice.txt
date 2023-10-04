@@ -1,0 +1,30 @@
+#include <stdio.h> 
+void main()
+{ 
+    char a, b, c, x;
+    int area, side, radius, length, breadth, perimeter;
+    printf("Enter a, b and c respectively to calculate the area of the circle, square and rectangle respectively");
+    scanf("%c", &x);
+    if (x=='a')
+    { 
+        printf("Enter the radius of the circle here");
+        scanf("%d", &radius);
+        area=radius*radius*3.14;
+        perimeter=2*3.14*radius;
+        printf("The area and perimeter of the circle are %d and %d respectively", area, perimeter);
+
+    } 
+    else if (x=='b')
+    { 
+        printf("Enter the side of the square");
+        scanf("%d", &side);
+        area=side*side;
+        perimeter=4*side;
+        printf("The area and perimeter of the square respectively are %d and %d", area, perimeter);
+     } else if (x=='c')
+{ 
+    printf("Enter the length and the breadth of the rectangle here");
+scanf("%d%d", &length, &breadth);
+area=length*breadth;
+perimeter=2*(length+breadth);
+printf("The area and the perimeter of the rectangle are %d and %d respectively", area, perimeter);}}

@@ -1,0 +1,11 @@
+#include <stdio.h> 
+void main()
+{ 
+    char x;
+    printf("Enter the alphabet here");
+    scanf("%c", &x);
+    if (x=='a' || x=='A' || x=='E' || x=='e' || x=='I' || x=='i' || x=='o' || x=='O' ||x=='U' || x=='u' )
+    { 
+        printf("The following alphabet is a vowel");
+    }
+ else printf("The following alphabet isn't a vowel, it is a consonant");}
