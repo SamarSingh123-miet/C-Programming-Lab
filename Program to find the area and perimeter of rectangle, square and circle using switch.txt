@@ -1,0 +1,40 @@
+#include <stdio.h> 
+void main()
+{ 
+    float area, perimeter;
+    float side, length, breadth, radius;
+    char a, b, c, x;
+    printf("Enter the characters a, b or c respectively for calculating the area of square, circle and rectangle");
+    scanf("%c", &x);
+    switch (x)
+    { 
+        case 'a':
+        case 'A':
+        printf("Enter the side of the square here");
+        scanf("%f", &side);
+        area=side*side;
+        perimeter=4*side;
+        printf("Area=%.2f, Perimeter=%.2f", area, perimeter);
+        break;
+
+        case 'b':
+        case 'B': 
+        printf("Enter the radius of the circle here");
+        scanf("%f", &radius);
+        area=radius*radius*3.14;
+        perimeter=radius*2*3.14;
+        printf("Area of the circle=%.2f, Perimeter=%.2f", area, perimeter);
+        break;
+
+        case 'C':
+        case 'c':
+        printf("Enter the length and the breadth of the rectangle here");
+        scanf("%f%f", &length, &breadth);
+        area=length*breadth;
+        perimeter=2*(length+breadth);
+        printf("Area=%.2f, Perimeter=%.2f", area, perimeter);
+        break;
+        default:
+        printf("Please enter the specified inputs to get the result");
+    }
+}
