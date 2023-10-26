@@ -1,0 +1,15 @@
+#include <stdio.h> 
+void main()
+{ 
+    int i,n,r, sum=0;
+    printf("Enter the number here (should be no more than 3 digits)");
+    scanf("%d", &n);
+    while (n>0)
+    { r=n%10;
+    
+    sum=sum+r;
+    n=n/10;
+   
+      
+}  printf("%d", sum);
+}
